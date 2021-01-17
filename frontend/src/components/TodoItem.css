@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
+
+.todoItem {
+  margin: 2rem !important;
+  font-family: "Comfortaa", cursive;
+  display: inline;
+  font-size: 12px;
+}
+
+.todoItem h1 {
+  background: #007965;
+  color: blacks;
+  padding: 1rem;
+  transition: background 0.5s ease;
+  max-width: 100%;
+}
+
+.fitcontent {
+  max-width: fit-content;
+}
+
+.done {
+  text-decoration: line-through;
+}
+
+.undone {
+  text-decoration: none;
+}
+
+.todoItem h1:hover {
+  background: #00af91;
+}
+
+.todoItem:hover {
+  cursor: pointer;
+}
