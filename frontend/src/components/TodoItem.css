@@ -1,36 +1,80 @@
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
 
+.containerTodos {
+  position: relative;
+  padding-top: 2rem !important;
+  padding-bottom: 2rem !important;
+
+  border-radius: 20px;
+
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 233, 227, 0.5),
+    rgba(124, 115, 230, 0.6)
+  );
+  margin-bottom: 5px;
+}
+
 .todoItem {
-  margin: 2rem !important;
+  background: black !important;
+
   font-family: "Comfortaa", cursive;
   display: inline;
   font-size: 12px;
 }
 
-.todoItem h1 {
-  background: #007965;
-  color: blacks;
+.todoItemH1 {
+  margin-bottom: 15px;
+  /* max-width: 100%; */
+  height: 4rem;
+  color: #333;
+  background: rgba(0, 0, 0, 0);
   padding: 1rem;
-  transition: background 0.5s ease;
-  max-width: 100%;
-}
-
-.fitcontent {
-  max-width: fit-content;
+  border-left: 3.5px solid rgba(124, 115, 230, 1);
 }
 
 .done {
   text-decoration: line-through;
+  color: rgb(126, 126, 126);
 }
 
 .undone {
   text-decoration: none;
-}
-
-.todoItem h1:hover {
-  background: #00af91;
+  color: rgb(126, 126, 126);
 }
 
 .todoItem:hover {
   cursor: pointer;
+}
+
+.buttonDelete {
+  position: absolute;
+  top: 15%;
+  right: 1%;
+  border-radius: 50%;
+  color: #f4f4f4;
+  background: #c4c1e0;
+  padding: 1rem 1rem;
+  border: none;
+}
+
+.fa-trash-alt {
+  color: red;
+  background: rgba(0, 0, 0, 0);
+}
+
+.buttonUpdate {
+  position: absolute;
+  top: 50%;
+  right: 1%;
+  border-radius: 50%;
+  color: #f4f4f4;
+  background: #c4c1e0;
+  padding: 1rem 1rem;
+  border: none;
+}
+
+.fa-check-circle {
+  color: green;
+  background: rgba(0, 0, 0, 0);
 }
